@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Page Title</title> 
+<link rel="stylesheet" href="./javascripts/jquery.mobile-1.0a4.1.min.css" />
+<script src="./javascripts/jquery-1.5.2.min.js"></script>
+<script src="./javascripts/jquery.mobile-1.0a4.1.min.js"></script>
+<script src="./javascripts/jquery.tmpl.min.js"></script>
+<script src="./javascripts/storification.js"></script>
+<style type="text/css">
+.ui-li-thumb, .ui-li-icon {height: 100%; margin: 0 auto;}
+</style>
+
+<script type="text/javascript">
+$(document).bind("mobileinit", function(){
+  $.extend( $.mobile, {
+    ajaxEnabled: false,
+    ajaxFormsEnabled: false
+  });
+});  
+</script>
+</head> 
+<body>
+<div data-role="page" id="homepage">
+	<div data-role="header">
+		<h1>Storify</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Page content goes here.</p>		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->  
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  Homepage.initialize();
+})
+</script>
+</body>
+</html>
