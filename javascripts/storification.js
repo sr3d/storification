@@ -249,3 +249,13 @@ var Homepage = (function($) {
     open: open
   }
 })(jQuery);
+
+
+
+
+$(document).bind("mobileinit", function(){
+  $.extend( $.mobile, {
+    ajaxEnabled: false,
+    ajaxFormsEnabled: false
+  });
+});
